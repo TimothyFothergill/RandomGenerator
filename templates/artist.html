@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/basicstyle.css">
+    <title>Your search for {{ name }}</title>>
+</head>
+    <body>
+        <a href="/">GO HOME NOW PLEASE</a>
+        <form action="/{{ name }}" method="get">
+            <input type="text" name="query" placeholder="Search for a artist...">
+            <input type="submit" name="query">
+        </form>
+        Welcome to the website.
+
+        <h2>{{ name }}</h2>
+
+        We found the following information on {{ name }}.<br/><br/>
+        This is their image on Spotify: <img src="{{ artist_image }}" alt="{{ name }}'s Spotify image." height="300" width="400"><br/><br/>
+        Their URI on Spotify is: {{ artist_uri }} <br/><br/>
+        An album of theirs is: {{ artist_album }} <br/></br>
+
+        Here are some of their songs: <br/><br/>
+        
+    </body>
+</html>
